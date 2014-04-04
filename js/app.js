@@ -64,7 +64,7 @@ var mainloop = function(timestamp) {
         
         charRenderer.render(mainApp.context, rene);
 
-        if(keyboardController.keydown){
+        if(keyboardController.keydown && frameCount % 10 == 0){
         	
         	//movimiento oscilatorio entre los frames
         	if(charRenderer.frames < charRenderer.frames_total && dir==0)
